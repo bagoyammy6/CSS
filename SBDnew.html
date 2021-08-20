@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>SBDnew</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+        @media screen and (min-width:375px) {
+            .big-wrap {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                background-color: rgb(41, 40, 40);
+            }
+            .wrap {
+            width: auto;
+            height: 100vh;
+            background-image: url(./SBD-img/IMG_20215311262.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+            }
+        }
+        @media screen and (min-width:1140px) {
+            .big-wrap {
+             width: auto;
+             height: auto;
+             background-color: rgb(41, 40, 40);
+             overflow: hidden;
+            }
+            .wrap {
+            width: auto;
+            height: 100vh;
+            background-image: url(./SBD-img/IMG_20215311262.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 20%;
+            }
+        }
+        @media screen and (min-width:375px) {
+            .triangle {
+            width: fit-content;
+            color: red;
+            font-size: 100px;
+            margin-left: 47%;
+            margin-top: -93px;;
+        }
+        .angle-down {
+            width: fit-content;
+            color: white;
+            font-size: 30px;
+            margin-left: 49.5%;
+            margin-top: -90px;;
+        }
+        }
+        @media screen and (min-width:1140px) {
+        .triangle {
+            width: fit-content;
+            color: red;
+            font-size: 150px;
+            margin-left: 47%;
+            margin-top: -140px;;
+        }
+        .angle-down {
+            width: fit-content;
+            color: white;
+            font-size: 30px;
+            margin-left: 49.5%;
+            margin-top: -125px;;
+        }
+        }
+        @media screen and (min-width:375px) {
+            .van {
+                display: none;
+            }
+            .nav {
+                padding: 10px 10px;
+                justify-content: space-between;
+                margin-bottom: 250px;
+            }
+            .hamburger {
+                display: block;
+                color: red;
+                font-size: 30px;
+            }
+        }
+        @media screen and (min-width:1140px) {
+            .nav {
+             width: 80%;
+             display: flex;
+             justify-content: space-between;
+             align-items: flex-start;
+             padding-top: 3%;
+             margin: 0 auto 8%;
+            }
+            .van {
+                 display: block;
+            }
+            .hamburger {
+                display: none;
+            }
+        } 
+        .bar {
+            display: flex;
+            justify-content: space-around;
+        }
+        .word {
+            margin-top: 15px;
+            margin-right: 15px;
+            color: white;
+        }
+        .word:hover {
+            border-bottom: 2px solid red;
+        }
+        .index {
+            border-bottom: 2px solid red;
+        }
+        @media screen and (min-width:375px) {
+            .box {
+            width: fit-content;
+            padding: 8px;
+            margin-left: 10%;
+        }
+        .box1 {
+            color: white;
+            border: 2px solid white;
+            font-size: 20px;;
+        }
+        .box2 {
+            color: white;
+            font-size: 15px;
+            margin-left: 9%;
+        }
+        .box3 {
+            color: white;
+            background-color: red;
+            font-size: 15px;
+            padding: 4px;
+        }
+        }
+        @media screen and (min-width:1140px) {
+        .box {
+            width: fit-content;
+            padding: 8px;
+            margin-left: 10%;
+        }
+        .box1 {
+            color: white;
+            border: 2px solid white;
+            font-size: 30px;;
+        }
+        .box2 {
+            color: white;
+            font-size: 70px;
+            margin-left: 9%;
+        }
+        .box3 {
+            color: white;
+            background-color: red;
+            font-size: 19px;
+        }
+        }
+        @media screen and (min-width:375px) {
+            .mid-bar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 5%;
+            margin-bottom: 17%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+            .mid-block {
+            width: 100%;
+            height: auto;
+            padding-top: 8%;
+            padding-bottom: 9%;
+            padding-right: 8%;
+            padding-left: 4%;
+            background-color: black;
+            margin-bottom: 5%;
+        }
+        .pic1 {
+            background-image: url(./SBD-img/IMG_201833174611.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: white;
+            text-align: right;
+            font-size: xx-small;
+        }
+        .eddie {
+            width: 70%;
+            font-size: 25px;
+            margin-bottom: 5%;
+            border-bottom: 2px solid white;
+            float: right;
+        }
+        .eddie-text {
+            float: right;
+        }
+        .pic2 {
+            background-image: url(./SBD-img/IMG_20183317488.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: white;
+            text-align: right;
+            font-size: xx-small;
+        }
+        .pic3 {
+            background-image: url(./SBD-img/IMG_201833174843.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: white;
+            text-align: right;
+            font-size: xx-small;
+        }
+        .go1 {
+            width: fit-content;
+            height: fit-content;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            font-size: small;
+            float: right;
+            margin-top: 20px;
+            clear: both;
+        }
+        .go2 {
+            width: fit-content;
+            height: fit-content;
+            background-color:red;
+            color: white;
+            padding: 5px;
+            font-size: small;
+            float: right;
+            margin-top: 20px;
+            clear: both;
+        }
+        .go3 {
+            width: fit-content;
+            height: fit-content;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            font-size: small;
+            float: right;
+            margin-top: 20px;
+            clear: both;
+        }
+        }
+        @media screen and (min-width:1140px) {
+            .mid-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 5%;
+            margin-bottom: 7%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+            .mid-block {
+            width: 28%;
+            height: auto;
+            padding-top: 1%;
+            padding-bottom: 9%;
+            padding-right: 2%;
+            padding-left: 4%;
+            background-color: black;
+        }
+        .pic1 {
+            background-image: url(./SBD-img/IMG_201833174611.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: white;
+            text-align: right;
+            font-size: xx-small;
+        }
+        .eddie {
+            width: 70%;
+            font-size: 25px;
+            margin-bottom: 5%;
+            border-bottom: 2px solid white;
+            float: right;
+        }
+        .eddie-text {
+            float: right;
+        }
+        .pic2 {
+            background-image: url(./SBD-img/IMG_20183317488.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: white;
+            text-align: right;
+            font-size: xx-small;
+        }
+        .pic3 {
+            background-image: url(./SBD-img/IMG_201833174843.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: white;
+            text-align: right;
+            font-size: xx-small;
+        }
+        .go1 {
+            width: fit-content;
+            height: fit-content;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            font-size: small;
+            float: right;
+            margin-top: 20px;
+        }
+        .go2 {
+            width: fit-content;
+            height: fit-content;
+            background-color:red;
+            color: white;
+            padding: 5px;
+            font-size: small;
+            float: right;
+            margin-top: 20px;
+        }
+        .go3 {
+            width: fit-content;
+            height: fit-content;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            font-size: small;
+            float: right;
+            margin-top: 20px;
+        }
+        }
+        .seperate {
+            width:auto;
+            height: 2%;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.229);
+            margin-left: 8%;
+            margin-right: 8%;
+        }
+        .hot-line {
+            width: fit-content;
+            border: 2px solid white;
+            color: white;
+            margin: -27px auto 0;
+            background-color: rgb(41, 40, 40);
+            font-size: 20px;
+            padding: 5px 40px;
+        }
+        .wrap-hot-line {
+            width: 200px;
+            background-color: rgb(41, 40, 40);
+            margin: -27px auto 0;
+        }
+        .container {
+            margin-top: 2%;
+        }
+        .product-text {
+            font-size: 17px;
+            color: white;
+            background-color: black;
+            background-clip: content-box;
+        }
+        .space {
+            width:60px;
+            height:30px;
+            border-top: 2px solid white;
+        }
+        .price1 {
+            color:red;
+            padding-bottom: 20px;
+        }
+        .price1::after {
+            content: "NTD 1490";
+            color: rgb(82, 80, 80);
+            text-decoration: line-through;
+            font-size: 14px;
+        }
+        .price2 {
+            color:red;
+            padding-bottom: 20px;
+        }
+        .price2::after {
+            content: "NTD 3290";
+            color: rgb(82, 80, 80);
+            text-decoration: line-through;
+            font-size: 14px;
+        }
+        .price3 {
+            color:red;
+            padding-bottom: 20px;
+        }
+        .price3::after {
+            content: "NTD 3550";
+            color: rgb(82, 80, 80);
+            text-decoration: line-through;
+            font-size: 14px;
+        }
+        .price4 {
+            color:red;
+            padding-bottom: 20px;
+        }
+        .price4::after {
+            content: "NTD 2520";
+            color: rgb(82, 80, 80);
+            text-decoration: line-through;
+            font-size: 14px;
+        }
+        .price5 {
+            color:red;
+            padding-bottom: 20px;
+        }
+        .price5::after {
+            content: "NTD 3960";
+            color: rgb(82, 80, 80);
+            text-decoration: line-through;
+            font-size: 14px;
+        }
+        .price6 {
+            color:red;
+            padding-bottom: 20px;
+        }
+        .price6::after {
+            content: "NTD 1740";
+            color: rgb(82, 80, 80);
+            text-decoration: line-through;
+            font-size: 14px;
+        }
+        .price7 {
+            color:red;
+            padding-bottom: 20px;
+        }
+        .price7::after {
+            content: "NTD 8900";
+            color: rgb(82, 80, 80);
+            text-decoration: line-through;
+            font-size: 14px;
+        }
+        .top-m {
+            margin-top: 30px;
+        }
+        @media screen and (min-width:375px) {
+            .mid-banner {
+            background-image: url(./SBD-img/bg-discover.jpg);
+            background-repeat: no-repeat;
+            background-position: left top;
+            width: 100vw;
+            height: 60vh;
+            margin-top: 35px;
+            position: relative;
+            opacity: 1;
+        }
+        .mid-banner-bg {
+            border-color: red;
+            background-image: url(./SBD-img/red-bg.jpeg);
+            width: 100vw;
+            height: 60vh;
+            position: absolute;
+            z-index: 1;
+            opacity: 0.6;
+        }
+        .mid-big-title {
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            z-index: 1;
+            left: 10%;
+            top: 20%
+        }
+        .mid-text {
+            color: white;
+            font-size: 15px;
+            position: absolute;
+            z-index: 1;
+            left: 10%;
+            top:38%;
+        }
+        .mid-info {
+            color: white;
+            font-size: 15px;
+            position: absolute;
+            z-index: 1;
+            left: 10%;
+            top: 55%;
+            border: 2px solid white;
+            padding: 12px;
+        }
+        .bg {
+            /* background-image: url(./SBD-img/bg_free-text.jpg); */
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 130vh;
+            margin: -120px auto 0;
+        }   
+        }
+        @media screen and (min-width:1140px) {
+        .mid-banner {
+            background-image: url(./SBD-img/bg-discover.jpg);
+            background-repeat: no-repeat;
+            background-position: left top;
+            width: 100vw;
+            height: 60vh;
+            margin-top: 35px;
+            position: relative;
+            opacity: 1;
+        }
+        .mid-banner-bg {
+            border-color: red;
+            background-image: url(./SBD-img/red-bg.jpeg);
+            width: 100vw;
+            height: 60vh;
+            position: absolute;
+            z-index: 1;
+            opacity: 0.6;
+        }
+        .mid-big-title {
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            z-index: 1;
+            left: 10%;
+            top: 20%
+        }
+        .mid-text {
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            z-index: 1;
+            left: 10%;
+            top:38%;
+        }
+        .mid-info {
+            color: white;
+            font-size: 15px;
+            position: absolute;
+            z-index: 1;
+            left: 10%;
+            top: 55%;
+            border: 2px solid white;
+            padding: 12px;
+        }
+        .bg {
+            background-image: url(./SBD-img/bg_free-text.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 130vh;
+            margin: -120px auto 0;
+        }
+        }
+        @media screen and (min-width:375px) {
+            .last-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 150px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .left-text {
+            color: white;
+            width: 100%;
+        }
+        .center-text {
+            background-image: url(./SBD-img/Lucky_工作區域\ 1.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            color: white;
+            margin-top: 50px;
+        }
+        .mid-words {
+            padding: 90% 15% 15%;
+            font-size: 10px;
+        }
+        .empty-text {
+            width: 100%;
+        }
+        }
+        @media screen and (min-width:1140px) {
+        .last-wrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 210px;
+            }
+        .left-text {
+            color: white;
+            width: 25%;
+        }
+        .center-text {
+            background-image: url(./SBD-img/Lucky_工作區域\ 1.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 30%;
+            transform: translate(10px, -20px) scale(0.9);
+            color: white;
+            margin-top: 0;
+        }
+        .mid-words {
+            padding: 90% 15% 15%;
+            font-size: 10px;
+        }
+        .empty-text {
+            width: 25%;
+        }
+        }
+        @media screen and (min-width:375px) {
+            .gap {
+            margin: 400px 15px 30px;
+        }
+        }
+        @media screen and (min-width:1140px) {
+            .gap {
+            margin: 40px 150px 80px;
+        }
+        }
+        .up-text {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .no2-text {
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+        .small-text {
+            font-size:10px;
+            margin-bottom: 60px;
+        }
+        
+        .copyright {
+            color: white;
+            font-size: 12px;
+        }
+        span {
+            color: red;
+        }
+        .contact {
+            color: red;
+        }
+        .inline {
+            color: white;
+        }
+        .little-space {
+            margin-top: 10px;
+        }
+        .little-logo {
+            font-size: 35px;
+        }
+        .cut {
+            font-size: 15px;
+        }
+        .bottom-line {
+            width: 100%;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            border-top: 2px solid rgba(255, 255, 255, 0.144);
+        }
+        @media screen and (min-width:375px) {
+            .fu {
+                margin-top: 20px;
+            }
+        }
+        @media screen and (min-width:1140px) {
+            .fu {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="big-wrap">
+        <div class="wrap">
+          <div class="nav">
+             <div class="logo"><img src="./SBD-img/logo.png"></div>
+             <div class="bar">
+                 <div class="word index van">首頁</div>
+                 <div class="word van">SBD商品</div>
+                 <div class="word van">最新消息</div>
+                 <div class="word van">SBD菁英聯盟</div>
+                 <div class="word van">聯絡我們</div>
+                 <div class="word van">線上商城</div>
+                 <div class="hamburger"><i class="fas fa-bars"></i></div>
+             </div>
+           </div>
+           <div class="box box1">限量款 - 激耐系【Endure】</div>
+          <div class="box box2">沈穩大地筆觸【冷杉綠】交疊【冷杉黑】</div>
+          <div class="box box3">數量有限，售完即絕版</div>
+        </div>
+        <div class="triangle"><i class="fas fa-caret-up"></i></i></div>
+        <div class="angle-down"><i class="fas fa-angle-down"></i></div>
+        <div class="mid-bar">  
+            <div class="mid-block pic1">
+                <h6>英國</h6>
+                <div class="eddie">Eddie Hall</div>
+                <div class="eddie-text">2017世界最強壯男人冠軍/2011~18英國最強壯男人衛冕冠軍/硬舉500KG世界紀錄保持人</div>
+                <div class="go1">GO WEBSITE</div>
+            </div>
+            <div class="mid-block pic2">
+                <h6>俄羅斯</h6>
+                <div class="eddie">Inna Filimonova</div>
+                <div class="eddie-text">57KG量級-2014~2016健力世界/冠軍世界紀錄保持人/SBD代言人</div>
+                <div class="go2">GO WEBSITE</div>
+            </div>
+            <div class="mid-block pic3">
+                <h6>冰島</h6>
+                <div class="eddie">Hafthor Björnsson</div>
+                <div class="eddie-text">魔山/2018全世界最強壯男人冠軍/2014~17歐洲最強壯男人冠軍/世界紀錄保持人/硬舉501KG新世界紀錄/SBD代言人</div>
+                <div class="go3">GO WEBSITE</div>
+            </div>
+        </div>
+        <div class="seperate"></div>
+        <div class="wrap-hot-line">
+            <div class="hot-line">熱門產品</div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-text"><img src="./SBD-img/IMG_20201215113921.jpg" width="100%" height="auto">Endure 激耐系T-shirt(冷杉綠)
+                    <div class="space"></div>
+                    <div class="price1">NTD 1385</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-text"><img src="./SBD-img/IMG_20201215115341.jpg" width="100%" height="auto">Endure 激耐系T-shirt(冷杉黑)
+                    <div class="space"></div>
+                    <div class="price1">NTD 1385</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-text"><img src="./SBD-img/IMG_20201124205349.jpg" width="100%" height="auto">Endure 激耐系 - 護膝
+                    <div class="space"></div>
+                    <div class="price2">NTD 3060</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-text"><img src="./SBD-img/IMG_20201124205717.jpg" width="100%" height="auto">Endure 激耐系 - 舉重護膝
+                    <div class="space"></div>
+                    <div class="price3">NTD 3300</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-text top-m"><img src="./SBD-img/IMG_2020112421219.jpg" width="100%" height="auto">Endure 激耐系 - 護肘
+                    <div class="space"></div>
+                    <div class="price4">NTD 2340</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-text top-m"><img src="./SBD-img/IMG_2020112421113.jpg" width="100%" height="auto">Endure 激耐系 - 比賽連身衣
+                    <div class="space"></div>
+                    <div class="price5">NTD 3680</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-text top-m"><img src="./SBD-img/IMG_2020112421240.jpg" width="100%" height="auto">Endure 激耐系 - 護腕
+                    <div class="space"></div>
+                    <div class="price6">NTD 1610</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-text top-m"><img src="./SBD-img/IMG_2021521125626-sbdapparel-com--23110-.jpg" width="100%" height="auto">SBD 全新經典健力腰帶
+                    <div class="space"></div>
+                    <div class="price7">NTD 8300</div>
+                </div>
+            </div>
+        </div>
+        <div class="mid-banner">
+            <div class="mid-banner-bg"></div>
+            <div class="mid-big-title">為力量而生，國際健力大賽與大力士比賽指定品牌</div>
+            <div class="mid-text">IPF (International Powerlifting Federation) 國際健力協會認證</div>
+            <div class="mid-info">全部產品資訊</div>
+        </div>
+        <div class="bg">
+            <div class="last-wrap">
+                <div class="left-text">
+                    <div class="up-text">最新消息</div>
+                    <div class="no2-text">2021夏季限量 - PHOENIX鳳凰系列</div>
+                    <div class="small-text">商城傳送門：https://shop.sbdapparel.com.tw/categories/phoenix
+                    SBD 全新2021 夏季限量款 - 【Pheonix鳳凰系列】高能量與源源不斷的活力。火熱的紅鳳凰與耀眼的白鳳凰，雙馳翱飛，猶如衝破燎原的一道焰光，化作一股無法阻遏的力量。在每組沈重、焦躁的呼吸中，歌頌必勝的決心，如火般張揚的燃起屢屢重生的毅力，為你的訓練留下最絢爛的痕跡。</div>
+                    <div class="small-img"><img src="./SBD-img/IMG_202178181954.png" width="100%" height="100%"></div>    
+                </div>
+                <div class="center-text">
+                    <div class="mid-words">
+                        <div class="in-mid-words">Bill Kazmaier (比爾.蓋茲邁爾) 世界最強壯男人三屆冠軍前世界紀錄保持人 / SBD代言人</div>
+                    <br>
+                    <div class="in-mid-words"><span>帶您深入探索英國SBD腰帶的製作過程</span></div>
+                    <br>
+                    <div class="in-mid-words"><i class="fas fa-circle"></i> <i class="fab fa-youtube"></i> SBD 經典腰帶 製作工藝介紹</div>
+                    <div class="in-mid-words"><i class="fas fa-circle"></i> <i class="fab fa-youtube"></i> 用力製造 #MadeWithMore</div>
+                    <div class="in-mid-words"><i class="fas fa-circle"></i> <i class="fab fa-youtube"></i> SBD全新經典比賽連身衣 #用力製造</div>
+                    </div>
+                </div>
+                <div class="empty-text"></div>
+            </div>
+        </div>
+        <div class="contain gap">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 fu">
+                    <div class="copyright">Copyright © 2021
+                        <span>SBD Apparel Taiwan Co., LTD.</span>
+                        <div class="second-line">沛力好物有限公司 (SBD Apparel Taiwan Co., LTD.)</div>
+                        <div class="little-logo">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram-square"></i>
+                            <i class="fab fa-line"></i>
+                            <i class="fab fa-youtube-square"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 fu">
+                    <div class="contact">聯絡資訊</div>
+                    <div class="inline little-space"><i class="fas fa-map-marker-alt"></i> 114 台北市內湖區瑞光路513巷30號7樓</div>
+                    <div class="inline"><i class="fas fa-phone-alt"></i> 客服電話：02-2659-5832</div>
+                    <div class="inline"><i class="fas fa-phone-alt"></i> 客服手機：0928-003-160</div>
+                    <div class="inline"><i class="fas fa-comments"></i> SBD台灣官方Line ID搜尋: @sbdtaiwan</div>
+                    <div class="inline"><i class="fas fa-envelope"></i> Email : Service@sbdapparel.com.tw</div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 fu">
+                    <div class="contact">媒體 & 合作 & 教練/選手</div>
+                    <div class="inline little-space cut">有關媒體行銷與合作，歡迎與我們聯繫洽談，請來信</div>
+                    <div class="inline cut"><i class="fas fa-envelope"></i> Email : Marketing@sbdapparel.com.tw</div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-line"><i class="fas fa-chevron-up"></i></div>        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
